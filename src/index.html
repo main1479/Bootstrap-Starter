@@ -1,100 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- font-awesome  -->
-    <script src="https://kit.fontawesome.com/bdc84e071b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-<h1 class="text-center display-3">Hello World</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- bootstrap files -->
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-    <!-- Main js file -->
-    <script src="js/main.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CURSITOS | HOME</title>
+		<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+		<!-- ============== FONTS ============= -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- ============== CSS FILES ============== -->
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<div class="container nav__container">
+					<button class="hamburger tablet-land-show menu__trigger hamburger--spring" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+					<a href="#" class="logo">
+						<img src="./img/logo.png" alt="" class="img-fluid" />
+					</a>
+					<ul class="nav__menu">
+						<li class="nav__menu-item">
+							<a href="#" class="nav__menu-link menu__trigger">Beginning</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#" class="nav__menu-link menu__trigger">courses</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#" class="nav__menu-link menu__trigger">About</a>
+						</li>
+						<li class="nav__menu-item">
+							<a href="#" class="nav__menu-link menu__trigger">Contact</a>
+						</li>
+					</ul>
+					<div class="btn__box">
+						<a href="#" class="btn btn__outlined tablet-land-hide">Login</a>
+						<a href="#" class="btn btn__outlined">register</a>
+					</div>
+				</div>
+			</nav>
+			<!-- ============ HEADER CONTENT ============= -->
+			<div class="container">
+				<div class="row align-items-end text-center text-lg-left">
+					<div class="col-lg-6">
+						<h1 class="heading mt-4 text-center text-lg-left mb-2">
+							Prepare Best <br />
+							for Exam
+						</h1>
+						<p class="p__text p__text-mid mb-3 text__secondary">
+							Join our course to get the best preparation and pass the exam without any problem!
+						</p>
+						<div class="btn__box d-lg-flex d-none">
+							<a href="#" class="btn btn__primary">Buy now</a>
+							<a href="#" class="btn btn__secondary">Study Plan</a>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<img src="./img/video-bg.png" alt="Cursitos" class="img-fluid mt-4 mbl-land-hide" />
+						<img
+							src="./img/hero-img-mobile.png"
+							alt="Cursitos"
+							width="100%"
+							class="mbl-land-show mt-4 mx-auto"
+						/>
+					</div>
+				</div>
+				<div class="btn__box justify-content-between d-flex d-lg-none mt-4">
+					<a href="#" class="btn btn__primary">Buy now</a>
+					<a href="#" class="btn btn__secondary">Study Plan</a>
+				</div>
+			</div>
+		</header>
+
+		<!-- ===================================== -->
+		<!-- ========== CTA WHATSAPP ============= -->
+		<!-- ===================================== -->
+		<section class="cta cta-whatsapp">
+			<div class="container">
+				<div class="cta__wrapper">
+					<h3 class="heading">Contact us on WhatsApp for any query</h3>
+					<a href="#" class="btn btn__whatsapp">
+						<svg>
+							<use xlink:href="./img/icons.svg#icon-whatsapp"></use>
+						</svg>
+						WhatsApp
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================================== -->
+		<!-- ========== WHAT'S INCLUDED ========== -->
+		<!-- ===================================== -->
+		<section class="included">
+			<div class="container">
+				<h2 class="heading mb-6 text-center">What is included?</h2>
+				<div class="row g-5">
+					<div class="col-md-4 col-6">
+						<div class="included__card included__card--1">
+							<figure class="included__card-img">
+								<img src="./img/play-icon.png" class="img-fluid" alt="play icon" />
+							</figure>
+							<h4 class="heading mt-2">Video lecture</h4>
+							<p class="p__text">9 hrs and 8 min</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-6">
+						<div class="included__card included__card--2">
+							<figure class="included__card-img">
+								<img src="./img/modules.png" class="img-fluid" alt="modules icon" />
+							</figure>
+							<h4 class="heading mt-2">modules</h4>
+							<p class="p__text">14 modules</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-6">
+						<div class="included__card included__card--3">
+							<figure class="included__card-img">
+								<img src="./img/chapters.png" class="img-fluid" alt="chapters icon" />
+							</figure>
+							<h4 class="heading mt-2">Chapters</h4>
+							<p class="p__text">100 Chapters</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-6">
+						<div class="included__card included__card--4">
+							<figure class="included__card-img">
+								<img src="./img/partial.png" class="img-fluid" alt="partial icon" />
+							</figure>
+							<h4 class="heading mt-2">Partial exams</h4>
+							<p class="p__text">24 partial exams</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-6">
+						<div class="included__card included__card--5">
+							<figure class="included__card-img">
+								<img src="./img/mock-exam.png" class="img-fluid" alt="mock exam icon" />
+							</figure>
+							<h4 class="heading mt-2">Mock exam</h4>
+							<p class="p__text">Exam with real test</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-6">
+						<div class="included__card included__card--6">
+							<figure class="included__card-img">
+								<img src="./img/certificate.png" class="img-fluid" alt="Certificate icon" />
+							</figure>
+							<h4 class="heading mt-2">Certificate</h4>
+							<p class="p__text">Certificate of completion</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ===================================== -->
+		<!-- ========== CTA REGISTERED? ========== -->
+		<!-- ===================================== -->
+
+		<section class="cta cta-registered">
+			<div class="container">
+				<div class="cta__wrapper">
+					<h2 class="heading">Are you already registered?</h2>
+					<a href="#" class="btn btn__primary"> Go to the course </a>
+				</div>
+			</div>
+		</section>
+		<!-- ===================================== -->
+		<!-- ========= INSTRUCTORS LIST ========== -->
+		<!-- ===================================== -->
+		<section class="instructors">
+			<div class="container">
+				<h4 class="heading text-center ch-70 capitalize mx-auto mb-5">
+					We offer you high-quality academic content made by qualified and experienced teachers at
+					CENEVAL, so we are sure that you will pass this exam.
+				</h4>
+
+				<div class="row">
+					<div class="col-lg-4 col-md-6 ml-auto">
+						<div class="instructors__card">
+							<figure class="instructors__card-img">
+								<img src="./img/instructor1.png" alt="instructor" />
+							</figure>
+							<div class="instructors__card-top">
+								<h3 class="name">Alicia Fuentes Hernandez</h3>
+								<span class="rating">
+									5.0
+									<svg>
+										<use xlink:href="./img/icons.svg#icon-star"></use>
+									</svg>
+								</span>
+							</div>
+							<div class="instructors__card-middle">
+								<h2 class="count student-count">37 <span>Student</span></h2>
+								<h2 class="count course-count">1 <span>Course</span></h2>
+							</div>
+							<div class="btn__box">
+								<a href="#" class="btn btn__primary btn__primary--small btn__primary--outlined"
+									>See Details</a
+								>
+								<a href="#" class="btn btn__primary btn__primary--small">Enroll now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 mr-auto">
+						<div class="instructors__card">
+							<figure class="instructors__card-img">
+								<img src="./img/instructor2.png" alt="instructor" />
+							</figure>
+							<div class="instructors__card-top">
+								<h3 class="name">Alicia Fuentes Hernandez</h3>
+								<span class="rating">
+									5.0
+									<svg>
+										<use xlink:href="./img/icons.svg#icon-star"></use>
+									</svg>
+								</span>
+							</div>
+							<div class="instructors__card-middle">
+								<h2 class="count student-count">37 <span>Student</span></h2>
+								<h2 class="count course-count">1 <span>Course</span></h2>
+							</div>
+							<div class="btn__box">
+								<a href="#" class="btn btn__primary btn__primary--small btn__primary--outlined"
+									>See Details</a
+								>
+								<a href="#" class="btn btn__primary btn__primary--small">Enroll now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================================== -->
+		<!-- ========== COURSE CONTENT =========== -->
+		<!-- ===================================== -->
+		<section class="course-content">
+			<div class="container">
+				<h2 class="heading text-center mb-5">Course content</h2>
+
+				<!-- NOTE: THIS SECTIONS MARKUPS COMING FROM JAVASCRIPT -->
+				<!-- HERE I KEEP SOME MARKUP FRO TEMPLATING  -->
+				<div class="content">
+					<div class="chapter">
+						<h3 class="chapter__title">
+							<span>1st Week: </span>Course presentation
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-chevron-right"></use>
+							</svg>
+						</h3>
+						<ul class="chapter__list">
+							<li>
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-unlocked"></use>
+								</svg>
+								Introduction
+							</li>
+							<li>
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-unlocked"></use>
+								</svg>
+								Logic
+							</li>
+							<li>
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-unlocked"></use>
+								</svg>
+								Esthetic
+							</li>
+						</ul>
+					</div>
+					<div class="chapter">
+						<h3 class="chapter__title">
+							<span>2nd Week: </span>Humanities
+							<svg>
+								<use xlink:href="./img/icons.svg#icon-chevron-right"></use>
+							</svg>
+						</h3>
+						<ul class="chapter__list">
+							<li>
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-locked"></use>
+								</svg>
+								Introduction
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===================================== -->
+		<!-- ======= CERTIFICATE SECTION ========= -->
+		<!-- ===================================== -->
+
+		<section class="certificate">
+			<div class="container text-center">
+				<h2 class="heading">Official digital certificate</h2>
+				<h4 class="heading ch-70 capitalize mx-auto mb-2">
+					Get your certificate to share with coworkers, friends and family.
+				</h4>
+				<img src="./img/digital-certificate.png" alt="certificate" class="img-fluid" />
+			</div>
+		</section>
+		<!-- ===================================== -->
+		<!-- ========= CTA CHECK PRICE =========== -->
+		<!-- ===================================== -->
+		<section class="cta check-price">
+			<div class="container">
+				<h2 class="heading mb-1">Check our prices and get enrolled</h2>
+				<h4 class="heading ch-70 capitalize mx-auto mb-3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae est, proin
+					feugiat nam. Purus suspendisse hendrerit montes
+				</h4>
+				<a href="#" class="btn btn__white">View Price</a>
+			</div>
+		</section>
+
+		<!-- ===================================== -->
+		<!-- =========== FOOTER AREA ============= -->
+		<!-- ===================================== -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-4 text-center mb-3">
+						<img src="./img/logo.png" alt="Cursitos" class="img-fluid" />
+					</div>
+					<div class="col-lg-2 col-md-4 col-6 mb-3">
+						<h3 class="footer__heading mb-3">Product</h3>
+						<ul class="footer__links">
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">Careere</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">About Us</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">Lorem ipsum</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">Pricing</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4 col-6 mb-3">
+						<h3 class="footer__heading mb-3">Lorem Ipsim</h3>
+						<ul class="footer__links">
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">lorem</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">Lorem ipsum</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">System Status</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">Tutorials</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-4 col-6 mb-3">
+						<h3 class="footer__heading mb-3">Resources</h3>
+						<ul class="footer__links">
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">About</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">Contact Us</a>
+							</li>
+							<li class="footer__links-item">
+								<a href="#" class="footer__links-link">Careers</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6 mb-3">
+						<h3 class="footer__heading mb-3">Follow Us</h3>
+						<div class="social">
+							<a href="#" class="social__link social__link--facebook">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-facebook"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__link social__link--google">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-g-plus"></use>
+								</svg>
+							</a>
+							<a href="#" class="social__link social__link--twitter">
+								<svg>
+									<use xlink:href="./img/icons.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<p class="copyright__text">© 2021 Copyright: Cursitos</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Main js file -->
+		<script src="js/main.js"></script>
+	</body>
 </html>

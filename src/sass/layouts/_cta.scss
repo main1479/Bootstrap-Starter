@@ -1,0 +1,35 @@
+.cta {
+	padding-bottom: 14rem;
+	&__wrapper {
+		background: linear-gradient(315deg, rgba(96, 116, 247, 0.1) 0%, rgba(151, 182, 255, 0.1) 100%);
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 3.5rem 2rem;
+		gap: 3rem;
+
+		.btn {
+			max-width: 270px;
+		}
+	}
+
+	@media only screen and (max-width: $mbl-land) {
+		padding-bottom: 5.3rem;
+
+		&__wrapper {
+			flex-wrap: wrap;
+			text-align: center;
+		}
+	}
+
+	&.check-price {
+		.container {
+			padding: 5rem 2rem;
+			text-align: center;
+			background: linear-gradient(318.07deg, #a91eff 5.36%, #68a2f8 100%);
+			border-radius: 25px;
+			color: #fff;
+		}
+	}
+}

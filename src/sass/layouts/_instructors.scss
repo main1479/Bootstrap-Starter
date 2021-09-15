@@ -1,0 +1,70 @@
+.instructors {
+	padding-bottom: 13rem;
+
+	&__card {
+		box-shadow: 0px 20px 60px -6px rgba(0, 0, 0, 0.16);
+		border-radius: 20px;
+		padding: 3rem;
+		margin-bottom: 3rem;
+
+		&-img {
+			width: 100%;
+			margin-bottom: 2rem;
+			img {
+				width: 100%;
+			}
+		}
+
+		&-top {
+			display: flex;
+			align-items: start;
+			justify-content: space-between;
+			margin-bottom: 2rem;
+			.name {
+				font-size: clamp(18px, 4vw, 2.5rem);
+				font-weight: 400;
+			}
+
+			.rating {
+				color: #efac5d;
+				display: flex;
+				align-items: center;
+				font-size: 1.8rem;
+				line-height: 1;
+				svg {
+					width: 1.8rem;
+					height: 1.8rem;
+					fill: currentColor;
+					margin-left: 1rem;
+				}
+			}
+		}
+
+		&-middle {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 2.5rem;
+
+			.count {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				font-size: clamp(15px, 4vw, 3rem);
+				color: $color-primary;
+				font-weight: 500;
+				font-family: $font-primary;
+				width: 50%;
+				line-height: 1;
+				span {
+					margin-top: 8px;
+					font-size: clamp(18px, 4vw, 2rem);
+					color: $color-text;
+				}
+				&.student-count {
+					border-right: 1px solid #d2d2d2;
+				}
+			}
+		}
+	}
+}

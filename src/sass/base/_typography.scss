@@ -1,1 +1,40 @@
-// typography
+.heading {
+	font-family: $font-primary;
+}
+
+h1.heading {
+	font-size: clamp(30px, 8vw, 6.5rem);
+	font-weight: bold;
+}
+
+h2.heading {
+	font-size: clamp(18px, 4vw, 4rem);
+	font-weight: 600;
+}
+h3.heading {
+	font-size: clamp(18px, 3vw, 2.6rem);
+	font-weight: 600;
+}
+h4.heading {
+	font-size: clamp(14px, 3vw, 2.2rem);
+	font-weight: 400;
+	line-height: 1.6;
+}
+
+p.p__text {
+	font-size: 1.8rem;
+
+	&-mid {
+		font-size: clap(16px, 4vw, 2rem);
+	}
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+.text__primary {
+	color: $color-primary;
+}
+.text__secondary {
+	color: $color-secondary;
+}

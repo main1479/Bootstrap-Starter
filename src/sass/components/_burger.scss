@@ -1,0 +1,72 @@
+.hamburger {
+	padding: 5px;
+	display: inline-block;
+	cursor: pointer;
+	transition-property: opacity, filter;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	background-color: transparent;
+	border: 0;
+	overflow: visible;
+	transform: scale(0.8);
+	transform-origin: bottom;
+	z-index: 9;
+
+	&:focus {
+		outline: 0;
+	}
+}
+.hamburger:hover {
+	opacity: 0.7;
+}
+
+.hamburger-box {
+	width: 3rem;
+	height: 24px;
+	display: inline-block;
+	position: relative;
+}
+
+.hamburger-inner {
+	display: block;
+	top: 50%;
+	margin-top: -2px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	width: 3rem;
+	height: 3px;
+	background-color: $color-secondary;
+	border-radius: 4px;
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 0.15s;
+	transition-timing-function: ease;
+}
+.hamburger-inner::before,
+.hamburger-inner::after {
+	content: '';
+	display: block;
+}
+.hamburger-inner::before {
+	top: -10px;
+}
+.hamburger-inner::after {
+	bottom: -10px;
+}
+
+.hamburger--spring .hamburger-inner {
+	top: 2px;
+	transition: background-color 0s 0.13s linear;
+}
+.hamburger--spring .hamburger-inner::before {
+	top: 10px;
+	transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+		transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--spring .hamburger-inner::after {
+	top: 20px;
+	transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+		transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}

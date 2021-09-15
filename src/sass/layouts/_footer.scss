@@ -1,0 +1,79 @@
+.footer {
+	padding-top: 6rem;
+	background: linear-gradient(315deg, rgba(96, 116, 247, 0.1) 0%, rgba(151, 182, 255, 0.1) 100%);
+
+	&__heading {
+		font-family: $font-primary;
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+
+	&__links {
+		&-item {
+			margin-bottom: 1.5rem;
+		}
+
+		&-link {
+			font-size: 1.4rem;
+			color: #27364b;
+			opacity: 0.7;
+		}
+	}
+
+	.social {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+		&__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 2px solid rgba(39, 54, 75, 0.1);
+			width: 4rem;
+			height: 4rem;
+			border-radius: 50%;
+			transition: all 0.3s;
+			svg {
+				width: 16px;
+				height: 16px;
+				fill: currentColor;
+				transition: all 0.3s;
+			}
+
+			&--facebook {
+				color: #a3a3a3;
+				&:hover {
+					background: #a3a3a3;
+				}
+			}
+			&--google {
+				color: #f34a38;
+				&:hover {
+					background: #f34a38;
+				}
+			}
+			&--twitter {
+				color: #55adee;
+				&:hover {
+					background: #55adee;
+				}
+			}
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.copyright {
+		border-top: 1px solid rgba(39, 54, 75, 0.1);
+		padding: 3.5rem 0;
+		text-align: center;
+		margin-top: clamp(16px, 4vw, 6rem);
+
+		&__text {
+			color: $color-secondary;
+			line-height: 1;
+		}
+	}
+}

@@ -15,4 +15,32 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
+	@media only screen and (max-width: $laptop-land) {
+		font-size: 55%;
+	}
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: $color-text;
+	font-family: $font-secondary;
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.container {
+	width: 95%;
+	max-width: 1240px;
+}
+.btn__box {
+	display: flex;
+	align-items: center;
+	.btn {
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
+	}
 }

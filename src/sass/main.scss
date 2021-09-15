@@ -10,3 +10,23 @@
 // ============================================
 @import './utils/reset';
 @import './utils/helper';
+@import './utils/text-width';
+@import './utils/mixins';
+
+// ============================================
+// Components
+// ============================================
+@import './components/buttons';
+@import './components/burger';
+@import './components/navbar';
+
+// ============================================
+// Layouts
+// ============================================
+@import './layouts/header';
+@import './layouts/cta';
+@import './layouts/included';
+@import './layouts/instructors';
+@import './layouts/course-content';
+@import './layouts/certificate';
+@import './layouts/footer';

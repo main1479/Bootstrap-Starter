@@ -1,0 +1,63 @@
+.course-content {
+	padding: 8rem 0;
+	background: linear-gradient(315deg, rgba(96, 116, 247, 0.1) 0%, rgba(151, 182, 255, 0.1) 100%);
+	font-family: $font-course-content;
+	border-radius: 15px;
+
+	.content {
+		background: #fff;
+		padding: clamp(2rem, 4vw, 4em) clamp(18px, 4vw, 5.5rem);
+		border-radius: 15px;
+	}
+	.chapter {
+		margin-bottom: 3rem;
+
+		&__title {
+			padding: 1rem 0;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			font-size: clamp(12px, 4vw, 2rem);
+			font-weight: 600;
+			// white-space: nowrap;
+			border-bottom: 1px solid #d2d2d2;
+			user-select: none;
+			span {
+				color: $color-primary;
+				margin-right: 5px;
+			}
+
+			svg {
+				width: 2rem;
+				height: 2rem;
+				fill: currentColor;
+				margin-left: auto;
+				transition: all 0.3s ease;
+			}
+			&.active {
+				svg {
+					transform: rotate(90deg);
+				}
+			}
+		}
+
+		&__list {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease;
+
+			li {
+				display: flex;
+				align-items: center;
+				margin: 1.5rem 0;
+				font-size: clamp(11px, 3vw, 2rem);
+			}
+			svg {
+				width: 2rem;
+				height: 2rem;
+				fill: currentColor;
+				margin-right: 1.5rem;
+			}
+		}
+	}
+}
